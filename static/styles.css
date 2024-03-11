@@ -1,0 +1,221 @@
+@font-face {
+    font-family: Chuby;
+    src: url(/static/fonts/Chuby.otf);
+}
+
+@font-face {
+    font-family: Dynamo;
+    src: url(/static/fonts/Dynamo.ttf);
+}
+
+@font-face {
+    font-family: Rotters;
+    src: url(/static/fonts/Rotters.otf);
+}
+
+@font-face {
+    font-family: supercomputer;
+    src: url(/static/fonts/supercomputer.ttf);
+}
+
+html, body {
+    padding: 20px;
+}
+
+h1 {
+    margin-bottom: 5px;
+    font-family: Chuby;
+    font-size: 50px;
+    -webkit-text-stroke: 0.1px black;
+}
+
+.mat {
+    font-family: supercomputer;
+    font-size: 16px;
+    color: rgb(43, 43, 43);
+    margin-top: 1px;
+}
+
+.listz {
+    font-family: supercomputer;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.icons img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px !important;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.icons img:hover {
+    transform:scale(1.5);
+}
+
+.icons img:last-child {
+    margin-right: 0;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+h2 {
+
+    color: black;
+}
+
+p {
+
+    color: black;
+}
+
+.listz {
+    font-family: supercomputer;
+    display: inline-block;
+}
+
+.listz h2 {
+    transition: transform 0.3s;
+}
+
+.listz h2:hover {
+    transform: translateY(-5px);
+}
+
+.content {
+    display: none;
+}
+
+#aboutContent {
+    display: block;
+}
+
+.about {
+    background-color: rgb(244, 255, 245);
+    color: rgb(255, 83, 203);
+}
+
+.work {
+    background-color: rgb(240, 250, 252);
+    color: rgb(255, 163, 88);
+}
+
+.contact {
+    background-color: rgb(252, 242, 240);
+    color: rgb(88, 255, 171);
+}
+
+body {
+    transition: background-color 1s, color 0.8s;
+}
+
+.mepng {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: auto;
+    margin-top: -300px;
+}
+
+.mepng img {
+    border-radius: 20px;
+    max-height: 100%;
+    max-width: 100%;
+    transition: transform 0.3s;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mepng img:hover + .tooltip {
+    display: block;
+}
+
+.tooltip {
+    position: absolute;
+    background-color: rgba(255, 174, 0, 0.774);
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    z-index: 999;
+    user-select: none;
+    cursor: pointer;
+}
+
+.responsivepng {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: auto;
+    margin-top: -300px;
+}
+
+.responsivepng img {
+    max-height: 100%;
+    max-width: 100%;
+    transition: transform 0.3s;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.responsivepng img:hover + .tooltip {
+    display: block;
+}
+
+.work-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%; /* Adjust as needed */
+    margin: auto;
+}
+
+.arrow-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    font-size: 24px;
+    cursor: pointer;
+    color: #000000;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.arrow:hover {
+
+    color: orange;
+    transform: scale(1.5);
+
+}
+
+.arrow.left {
+    margin-right: 1px;
+}
+
+.arrow.right {
+    margin-left: 1px;
+}
+
+.contacttext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    vertical-align: middle;
+    font-family: MerriWether;
+    font-size: 50px;
+    font-weight: 520;
+}

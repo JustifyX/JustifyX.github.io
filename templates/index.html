@@ -1,0 +1,70 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Luka Matiashvili's Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="/static/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="icons">
+                <a href="https://instagram.com/justifyxmusic" target="_blank">
+                    <img src="/static/icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="https://twitter.com/JustifyX2" target="_blank">
+                    <img src="/static/icons/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://youtube.com/c/JustifyX" target="_blank">
+                    <img src="/static/icons/youtube.png" alt="YouTube">
+                </a>
+            </div>
+        </header>
+        <div class="bg-color">
+            <h1>JustifyX</h1>
+            <h3 class="mat">or Luka Matiashvili</h3>
+        </div>
+        <div class="listz pointer">
+            <h2 onclick="showContent('about')">About</h2>
+            <h2 onclick="showContent('work')">Work</h2>
+            <h2 onclick="showContent('contact')">Contact</h2>
+        </div>
+        <div id="aboutContent" class="content">
+            <div class="mepng" id="imageContainer">
+                <img src="/static/Me.jpg" class="pointer" id="hoverImage">
+                    <div class="tooltip">
+                        Hello! It's me JustifyX / Luka Matiashvili. I have experience of 4+ years in coding.
+                    </div>
+            </div>
+        </div>
+
+        <div id="workContent" class="content">
+            <div class="work-container">
+                <div class="arrow-container">
+                    <div class="arrow left pointer" onclick="changeImage(-1)">&#10094;</div>
+                </div>
+                <div class="responsivepng" id="workImageContainer">
+                    <img src="/static/responsive web design certificate.PNG" class="pointer" id="workHoverImage">
+                    <div class="tooltip" id="workDescription">
+                    </div>
+                </div>
+                <div class="arrow-container">
+                    <div class="arrow right pointer" onclick="changeImage(1)">&#10095;</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactContent" class="content contacttext">
+            <p>
+                Contact me for any inquiries:
+            </p>
+            <p>
+                Email: justifxbusiness@gmail.com
+            </p>
+            <p>
+                Instagram: @justifyxmusic
+            </P>
+        </div>
+        <script src="/static/index.js"></script>
+        </body>
+        </html>
